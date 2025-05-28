@@ -83,6 +83,7 @@ public class CardTrick {
                     break;
                 }
         }
+        
         System.out.println(output);
         
     }

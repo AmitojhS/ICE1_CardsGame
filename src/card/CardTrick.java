@@ -22,6 +22,9 @@ public class CardTrick {
     {
         
         Card[] magicHand = new Card[7]; //Array of object
+        Card luckyCard = new Card(); //Added object from github
+        luckyCard.setValue(2);
+        luckyCard.setSuits("Clubs");
 
         
         for( int i=0;i<magicHand.length;i++)
@@ -62,12 +65,19 @@ public class CardTrick {
         }
         
         String finalValue = userInp + " of " + switchedSuit;
+          boolean luckyCardFound = false;
+        for (Card card : magicHand) {
+            if (card.getValue() == luckyCard.getValue() && card.getSuits().equals(luckyCard.getSuits())) {
+            luckyCardFound = true;
+            break;
+            }
+        }
       
         //step 3: match with array 
         String output = "Sorry, your card is not in the magic hand.";
         for(int i=0;i<magicHand.length;i++)
         {
-            if(magicHand[i].toString().equals(finalValue))
+            if(magicHand[i].toString().equals(finalValue) || magicHand[i].toString().equals(luckyCard.toString()))
                 {
                     output = "Card is found.";
                     break;

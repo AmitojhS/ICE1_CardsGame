@@ -22,6 +22,8 @@ public class CardTrick {
     {
         
         Card[] magicHand = new Card[7]; //Array of object
+        Card luckyCard = new Card(4,"diamonds"); //Added object from github
+
         
         for( int i=0;i<magicHand.length;i++)
         {

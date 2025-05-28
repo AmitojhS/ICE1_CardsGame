@@ -22,9 +22,7 @@ public class CardTrick {
     {
         
         Card[] magicHand = new Card[7]; //Array of object
-        Card luckyCard = new Card();//Added object from github
-        luckyCard.setValue(2);
-        luckyCard.setSuits("Clubs");
+        
         for( int i=0;i<magicHand.length;i++)
         {
             Card c1 = new Card((int)((Math.random()*13) + 1),Card.SUITS[(int)(Math.random()*4)]);

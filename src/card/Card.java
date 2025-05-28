@@ -47,6 +47,9 @@ public class Card
    //number
     
     //method for suits
+    public Card() {
+    
+    }
     public Card(int value, String suits)
     {
         this.value=value;

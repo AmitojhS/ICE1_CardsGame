@@ -22,9 +22,6 @@ public class CardTrick {
     {
         
         Card[] magicHand = new Card[7]; //Array of object
-        Card luckyCard = new Card(); //Added object from github
-        luckyCard.setValue(2);
-        luckyCard.setSuits("Clubs");
 
         
         for( int i=0;i<magicHand.length;i++)
@@ -77,6 +74,7 @@ public class CardTrick {
                 }
         }
         System.out.println(output);
+        
     }
     
 }
